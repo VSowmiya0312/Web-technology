@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Bill</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Supermarket Billing System</h1>
+    <p>Create Customer Bill</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="billing.html">Billing</a>
+</nav>
+
+<main class="billing">
+
+    <h2>Customer Details</h2>
+
+    <label>Customer Name:</label>
+    <input type="text" id="customerName" placeholder="Enter customer name">
+
+
+    <h2>Products</h2>
+
+    <!-- Products will be added here -->
+    <div id="productContainer">
+
+        <div class="product-box">
+
+            <h3>Product 1</h3>
+
+            <label>Product Name:</label>
+            <input type="text" class="productName"
+                   placeholder="Enter product name">
+
+            <label>Quantity:</label>
+            <input type="number" class="quantity"
+                   min="1" value="1">
+
+            <label>Unit Price (₹):</label>
+            <input type="number" class="price"
+                   min="0" placeholder="Enter price">
+
+        </div>
+
+    </div>
+
+
+    <button type="button" onclick="addProduct()">
+        + Add Product
+    </button>
+
+
+    <button type="button" class="generate"
+            onclick="generateBill()">
+        Generate Bill
+    </button>
+
+</main>
+
+<footer>
+    <p>Supermarket Billing System | JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

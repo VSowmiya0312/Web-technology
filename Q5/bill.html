@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Final Bill</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Supermarket Billing System</h1>
+
+    <p>Final Customer Bill</p>
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="billing.html">Billing</a>
+
+</nav>
+
+
+<main class="bill">
+
+    <h2>Customer Bill</h2>
+
+    <p>
+        <strong>Customer Name:</strong>
+
+        <span id="displayCustomer"></span>
+    </p>
+
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>S.No</th>
+
+                <th>Product</th>
+
+                <th>Quantity</th>
+
+                <th>Unit Price</th>
+
+                <th>Amount</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody id="billItems">
+
+        </tbody>
+
+    </table>
+
+
+    <div class="bill-summary">
+
+        <p>
+            <strong>Total Amount:</strong>
+
+            ₹<span id="displayTotal">0</span>
+        </p>
+
+
+        <p>
+            <strong>Discount:</strong>
+
+            ₹<span id="displayDiscount">0</span>
+        </p>
+
+
+        <p class="final">
+
+            <strong>Final Payable Amount:</strong>
+
+            ₹<span id="displayFinal">0</span>
+
+        </p>
+
+    </div>
+
+
+    <a href="billing.html" class="button">
+
+        Create New Bill
+
+    </a>
+
+</main>
+
+
+<footer>
+
+    <p>Thank You! Visit Again.</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

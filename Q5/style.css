@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #123d15;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Home */
+
+.home {
+    text-align: center;
+}
+
+.home h2 {
+    margin-bottom: 20px;
+}
+
+.home p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.home ul {
+    list-style-position: inside;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+
+/* Buttons */
+
+.button,
+button {
+    display: inline-block;
+
+    background-color: #1b5e20;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    margin-top: 20px;
+}
+
+.button:hover,
+button:hover {
+    background-color: #123d15;
+}
+
+
+/* Billing */
+
+.billing h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.billing > label {
+    font-weight: bold;
+}
+
+
+/* Inputs */
+
+label {
+    display: block;
+
+    margin-top: 12px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+
+/* Product Box */
+
+.product-box {
+    border: 2px solid #d8e8d8;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+    border-radius: 10px;
+
+    background-color: #f8fff8;
+}
+
+.product-box h3 {
+    color: #1b5e20;
+
+    margin-bottom: 15px;
+}
+
+
+/* Remove Button */
+
+.remove-btn {
+    background-color: #c62828;
+
+    margin-top: 15px;
+}
+
+.remove-btn:hover {
+    background-color: #8e0000;
+}
+
+
+/* Generate Button */
+
+.generate {
+    background-color: #1565c0;
+
+    margin-left: 10px;
+}
+
+.generate:hover {
+    background-color: #0d47a1;
+}
+
+
+/* Bill */
+
+.bill {
+    text-align: center;
+}
+
+.bill > p {
+    margin: 20px 0;
+
+    font-size: 18px;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 25px;
+
+    margin-bottom: 25px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+th {
+    background-color: #1b5e20;
+
+    color: white;
+}
+
+
+/* Bill Summary */
+
+.bill-summary {
+    background-color: #f1f8e9;
+
+    padding: 20px;
+
+    text-align: right;
+
+    margin-bottom: 25px;
+
+    border-radius: 8px;
+}
+
+.bill-summary p {
+    margin: 12px;
+
+    font-size: 18px;
+}
+
+.final {
+    font-size: 22px !important;
+
+    color: #1b5e20;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #1b5e20;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 50px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 95%;
+
+        padding: 20px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    .generate {
+        margin-left: 0;
+    }
+}
